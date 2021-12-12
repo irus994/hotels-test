@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/hotels-test/static/css/main.92722e75.chunk.css",
-    "main.js": "/hotels-test/static/js/main.5d6dfc04.chunk.js",
-    "main.js.map": "/hotels-test/static/js/main.5d6dfc04.chunk.js.map",
+    "main.js": "/hotels-test/static/js/main.98eec1d6.chunk.js",
+    "main.js.map": "/hotels-test/static/js/main.98eec1d6.chunk.js.map",
     "runtime-main.js": "/hotels-test/static/js/runtime-main.ae8609af.js",
     "runtime-main.js.map": "/hotels-test/static/js/runtime-main.ae8609af.js.map",
     "static/js/2.b868e5ef.chunk.js": "/hotels-test/static/js/2.b868e5ef.chunk.js",
@@ -19,6 +19,6 @@
     "static/js/runtime-main.ae8609af.js",
     "static/js/2.b868e5ef.chunk.js",
     "static/css/main.92722e75.chunk.css",
-    "static/js/main.5d6dfc04.chunk.js"
+    "static/js/main.98eec1d6.chunk.js"
   ]
 }
