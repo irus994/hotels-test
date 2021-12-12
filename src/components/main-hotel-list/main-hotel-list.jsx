@@ -5,8 +5,8 @@ import {connect} from 'react-redux';
 export function MainHotelList(props) {
     const {hotels} = props
     return (
-        <div className="wrapper__hotel-list">
-            <ul className="hotel__list hotel__list--main">
+        <div className="wrapper__hotels-list">
+            <ul className="hotels__list hotels__list--main">
                 {
                     hotels.map((hotel) => (
                         <HotelItem

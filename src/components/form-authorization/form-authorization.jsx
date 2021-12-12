@@ -41,13 +41,13 @@ export function FormAuthorization(props) {
     }
 
     return (
-        <div className="login-form__wrapper">
-            <h1 className="login__form-header">Simple Hotel Check</h1>
+        <div className="login">
+            <h1 className="login__header">Simple Hotel Check</h1>
             <form noValidate className="login__form" onSubmit={handleSubmit}>
             <ul className="login__list">
                 <li className="login__item">
                     <label htmlFor="email" className={emailError ? 'login__form-text login__form-text--error' : 'login__form-text'}>Логин</label>
-                    <input required id="email" type="email" ref={loginRef} className={emailError ? 'form-reservation__input form-reservation__input--error' : 'form-reservation__input'}/>
+                    <input required id="email" type="email" ref={loginRef} className={emailError ? 'form-input form-input--error' : 'form-input'}/>
                     {
                         (emailError) && (
                             <div className="error-message">
@@ -58,7 +58,7 @@ export function FormAuthorization(props) {
                 </li>
                 <li className="login__item">
                     <label htmlFor="password" className={passError ? 'login__form-text login__form-text--error' : 'login__form-text'}>Пароль</label>
-                    <input required id="password" type="password" minLength={8} ref={passwordRef} className={passError ? 'form-reservation__input form-reservation__input--error' : 'form-reservation__input'}/>
+                    <input required id="password" type="password" minLength={8} ref={passwordRef} className={passError ? 'form-input form-input--error' : 'form-input'}/>
                     {
                         (passError) && (
                             <div className="error-message">

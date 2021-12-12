@@ -36,7 +36,7 @@ export function FavoriteBlock(props) {
                 <button onClick={onSortChange} value="rating" className={activeSort === 'rating' ? "sort__button sort__button--rating sort__button--active" : "sort__button sort__button--rating"}><span className={activeSort === 'rating' ? "sort__text sort__text--active" : "sort__text"}>Рейтинг</span></button>
                 <button onClick={onSortChange} value="price" className={activeSort === 'price' ? "sort__button sort__button--rating sort__button--active" : "sort__button sort__button--rating"}><span className={activeSort === 'price' ? "sort__text sort__text--active" : "sort__text"}>Цена</span></button>
             </div>
-            <ul className="hotel__list">
+            <ul className="hotels__list">
                 {
                     sortedFavoriteList.map((hotel) => (
                         <HotelFavoriteItem

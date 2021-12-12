@@ -12,14 +12,14 @@ export function MainHotelsBlock(props) {
         <section className="hotels">
             <div>
                 <div className="wrapper__hotel-title">
-                    <ul className="bread-crumbs">
-                        <li className="bread-crumbs__item">Отели</li>
-                        <li className="bread-crumbs__item">{location}</li>
+                    <ul className="hotels__bread-crumbs">
+                        <li className="hotels__bread-crumb">Отели</li>
+                        <li className="hotels__bread-crumb">{location}</li>
                     </ul>
-                    <span className="hotel__title-date">{dateConvert(checkin)}</span>
+                    <span className="hotels__title-date">{dateConvert(checkin)}</span>
                 </div>
                 <Slider/>
-                <span className="hotel__added-favorites">Добавлено в Избранное: <span className="hotel__count">{favoriteList.length}</span> отеля</span>
+                <span className="hotels__added-favorites">Добавлено в Избранное: <span className="hotel__count">{favoriteList.length}</span> отеля</span>
             </div>
             <MainHotelList/>
         </section>

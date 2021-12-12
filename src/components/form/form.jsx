@@ -45,15 +45,15 @@ export function Form(props) {
                 <ul className="form-reservation__list">
                     <li className="form-reservation__item">
                         <label className="form-reservation__text">Локация</label>
-                        <input ref={locationRef} className="form-reservation__input" defaultValue="Москва" />
+                        <input ref={locationRef} className="form-input" defaultValue="Москва" />
                     </li>
                     <li className="form-reservation__item form-reservation__item--date">
                         <label className="form-reservation__text">Дата заселения</label>
-                        <input ref={dateRef} type="date" className="form-reservation__input" defaultValue={todayDate} />
+                        <input ref={dateRef} type="date" className="form-input" defaultValue={todayDate} />
                     </li>
                     <li className="form-reservation__item">
                         <label className="form-reservation__text">Количество дней</label>
-                        <input ref={countDaysRef} className="form-reservation__input" defaultValue="1" />
+                        <input ref={countDaysRef} className="form-input" defaultValue="1" />
                     </li>
                 </ul>
                 <button className="button"><span className="button__text">Найти</span></button>
