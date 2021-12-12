@@ -7,7 +7,6 @@ import {connect} from "react-redux";
 
 export function MainHotelsBlock(props) {
     const {favoriteList, location, checkin} = props;
-    console.log(checkin)
     return (
         <section className="hotels">
             <div>

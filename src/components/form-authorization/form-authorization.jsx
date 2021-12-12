@@ -25,7 +25,6 @@ export function FormAuthorization(props) {
         if (passwordRef.current.validity.valid) {
             setPassError('');
         } else {
-            console.log(passwordRef.current.validity)
             setPassError('Некорректный пароль');
             formValid = false;
         }

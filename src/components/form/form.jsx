@@ -4,8 +4,6 @@ import {fetchHotelList} from "../../store/api-action.js";
 import {connect} from 'react-redux';
 import {ActionCreator} from "../../store/action";
 
-// console.log(addDays('2022-09-01', 7));
-
 export function Form(props) {
     const {onFilter} = props;
 
@@ -19,7 +17,7 @@ export function Form(props) {
     })
 
     useEffect(() => {
-        console.log();
+
         onFilter(
             {
             location: locationRef.current.value,

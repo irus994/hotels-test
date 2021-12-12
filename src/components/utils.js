@@ -16,8 +16,5 @@ export const dateConvert = (date) => {
     const dataMonth = month[date.slice(5, 7) - 1];
     const dataDay = date.slice(8, 10);
 
-    console.log(date.slice(6, 7) - 1)
-
     return `${dataDay} ${dataMonth} ${dataYear}`
-
 };

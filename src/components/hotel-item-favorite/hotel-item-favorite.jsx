@@ -5,7 +5,6 @@ import {ActionCreator} from '../../store/action.js'
 
 function HotelFavoriteItem(props) {
     const {hotelName, price, hotelId, favoriteList, addToFavorite, deleteFromFavorite, starCount} = props;
-console.log(favoriteList)
 
     const onFavoriteToggle = () => {
 
