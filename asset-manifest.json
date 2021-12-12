@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/hotels-test/static/css/main.92722e75.chunk.css",
+    "main.js": "/hotels-test/static/js/main.27081089.chunk.js",
+    "main.js.map": "/hotels-test/static/js/main.27081089.chunk.js.map",
+    "runtime-main.js": "/hotels-test/static/js/runtime-main.ae8609af.js",
+    "runtime-main.js.map": "/hotels-test/static/js/runtime-main.ae8609af.js.map",
+    "static/js/2.38c8d581.chunk.js": "/hotels-test/static/js/2.38c8d581.chunk.js",
+    "static/js/2.38c8d581.chunk.js.map": "/hotels-test/static/js/2.38c8d581.chunk.js.map",
+    "static/js/3.ccc61ac7.chunk.js": "/hotels-test/static/js/3.ccc61ac7.chunk.js",
+    "static/js/3.ccc61ac7.chunk.js.map": "/hotels-test/static/js/3.ccc61ac7.chunk.js.map",
+    "index.html": "/hotels-test/index.html",
+    "static/css/main.92722e75.chunk.css.map": "/hotels-test/static/css/main.92722e75.chunk.css.map",
+    "static/js/2.38c8d581.chunk.js.LICENSE.txt": "/hotels-test/static/js/2.38c8d581.chunk.js.LICENSE.txt",
+    "static/media/App.css": "/hotels-test/static/media/rating-star.8c125c62.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ae8609af.js",
+    "static/js/2.38c8d581.chunk.js",
+    "static/css/main.92722e75.chunk.css",
+    "static/js/main.27081089.chunk.js"
+  ]
+}
