@@ -31,7 +31,7 @@ export const checkAuth = () => (dispatch) => (
 );
 
 export const fetchHotelList = ({location, checkIn, checkOut}) => (dispatch) => {
-    return fetch(`http://engine.hotellook.com/api/v2/cache.json?location=${location}&checkIn=${checkIn}&checkOut=${checkOut}&currency=rub`)
+    return fetch(`https://engine.hotellook.com/api/v2/cache.json?location=${location}&checkIn=${checkIn}&checkOut=${checkOut}&currency=rub`)
         .then((response) => response.json())
         .then((response) => dispatch(ActionCreator.loadHotels(response)))
 };

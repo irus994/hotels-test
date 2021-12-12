@@ -1,5 +1,5 @@
 import './App.css';
-import {Switch, BrowserRouter} from 'react-router-dom';
+import {Switch, HashRouter} from 'react-router-dom';
 import {AppRoute} from "./components/const.js";
 import General from "./components/general/general.jsx";
 import PageAuthorization from "./components/page-authorization/page-authorization.jsx";
@@ -8,12 +8,12 @@ import OnlyUnauthorizedRoute from './components/only-unauthorized-route/only-una
 
 function App() {
  return (
-     <BrowserRouter>
+     <HashRouter>
        <Switch>
         <PrivateRoute exact path={AppRoute.ROOT} render={() => <General/>}/>
         <OnlyUnauthorizedRoute exact path={AppRoute.SING_IN} render={() => <PageAuthorization/>}/>
        </Switch>
-     </BrowserRouter>
+     </HashRouter>
   );
 }
 
