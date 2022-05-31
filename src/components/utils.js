@@ -1,4 +1,5 @@
 export default function addDays(date, daysCount) {
+
     let result = new Date(date);
     result.setDate(result.getDate() + daysCount);
     const year = result.getFullYear();

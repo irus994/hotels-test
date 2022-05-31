@@ -13,7 +13,7 @@ export function Form(props) {
 
     const [todayDate] = useState(() => {
         const today = new Date();
-        return today.getFullYear() + '-' + (today.getMonth() + 1) + '-' + today.getDate()
+        return today.getFullYear() + '-' + ('0' + (today.getMonth() + 1)).slice(-2) + '-' + ('0' + today.getDate()).slice(-2);
     })
 
     useEffect(() => {
@@ -25,10 +25,10 @@ export function Form(props) {
             checkOut: addDays(dateRef.current.value, +countDaysRef.current.value),
             }
         )
-    }, [])
+    }, [onFilter])
 
     const handleSubmit = (evt) => {
-        evt.preventDefault()
+        evt.preventDefault();
 
         onFilter({
             location: locationRef.current.value,
@@ -36,7 +36,7 @@ export function Form(props) {
             checkOut: addDays(dateRef.current.value, +countDaysRef.current.value),
         });
     }
-
+    console.log(todayDate)
     return (
         <div className="wrapper__form">
             <form onSubmit={handleSubmit} className="form-reservation">

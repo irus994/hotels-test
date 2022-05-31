@@ -10,7 +10,7 @@ export const logout = () => (dispatch) => (
         .then(() => {
             dispatch(ActionCreator.logout());
         })
-)
+);
 
 export const login = ({login, password}) => (dispatch) => (
     Promise.resolve({token: 'token'})
@@ -20,7 +20,7 @@ export const login = ({login, password}) => (dispatch) => (
         })
         .then((data) => dispatch(ActionCreator.requireAuthorization(AuthorizationStatus.AUTH, data)))
         .then(() => dispatch(ActionCreator.redirectToRoute(AppRoute.ROOT)))
-)
+);
 
 export const checkAuth = () => (dispatch) => (
     localStorage.getItem('token')
@@ -30,8 +30,10 @@ export const checkAuth = () => (dispatch) => (
             .then(() => dispatch(ActionCreator.requireAuthorization(AuthorizationStatus.NO_AUTH, {})))
 );
 
-export const fetchHotelList = ({location, checkIn, checkOut}) => (dispatch) => {
-    return fetch(`https://engine.hotellook.com/api/v2/cache.json?location=${location}&checkIn=${checkIn}&checkOut=${checkOut}&currency=rub`)
-        .then((response) => response.json())
-        .then((response) => dispatch(ActionCreator.loadHotels(response)))
+export const fetchHotelList = ({location, checkIn, checkOut}) => {
+    return (dispatch) => {
+        return fetch(`https://engine.hotellook.com/api/v2/cache.json?location=${location}&checkIn=${checkIn}&checkOut=${checkOut}&currency=rub`)
+            .then((response) => response.json())
+            .then((response) => dispatch(ActionCreator.loadHotels(response)))
+    };
 };

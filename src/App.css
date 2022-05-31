@@ -211,7 +211,7 @@ body {
   border-radius: 16px;
   padding: 39px 30px 31px 30px;
   box-sizing: border-box;
-  overflow: scroll;
+  /*overflow: scroll;*/
 }
 
 .favorites__header {
@@ -363,12 +363,14 @@ body {
   list-style: none;
   padding: 0;
   margin-top: 20px;
-  width: 100%;
-}
-
-.hotels__list--main {
+  height: 530px;
   width: 580px;
   overflow: scroll;
+}
+
+.hotels__list--favorite {
+  width: 100%;
+  height: 300px;
 }
 
 .hotel__name {
@@ -489,13 +491,12 @@ body {
   justify-content: space-between;
 }
 
-.scrollbar {
-  height: 529px;
-  width: 2px;
-  background: #E7E7E7;
-  position: relative;
-
-}
+/*.scrollbar {*/
+/*  height: 529px;*/
+/*  width: 2px;*/
+/*  background: #E7E7E7;*/
+/*  position: relative;*/
+/*}*/
 
 .scrollbar__handler {
   height: 100px;

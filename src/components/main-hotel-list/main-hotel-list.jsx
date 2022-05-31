@@ -3,14 +3,15 @@ import HotelItem from "../hotel-item/hotel-item.jsx";
 import {connect} from 'react-redux';
 
 export function MainHotelList(props) {
-    const {hotels} = props
+    const {hotels} = props;
+
     return (
         <div className="wrapper__hotels-list">
-            <ul className="hotels__list hotels__list--main">
+            <ul className="hotels__list">
                 {
                     hotels.map((hotel) => (
                         <HotelItem
-                            key={hotel.id}
+                            key={hotel.hotelId}
                             hotelName={hotel.hotelName}
                             price={hotel.priceAvg}
                             hotelId={hotel.hotelId}
@@ -19,9 +20,6 @@ export function MainHotelList(props) {
                     ))
                 }
             </ul>
-            <div className="scrollbar">
-                <div className="scrollbar__handler"></div>
-            </div>
         </div>
     );
 }

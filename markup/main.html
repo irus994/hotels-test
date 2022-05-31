@@ -41,7 +41,7 @@
                     <button class="sort__button sort__button--rating sort__button--active"><span class="sort__text sort__text--active">Рейтинг</span></button>
                     <button class="sort__button sort__button--price"><span class="sort__text">Цена</span></button>
                 </div>
-                <ul class="hotels__list">
+                <ul class="hotels__list hotels__list--favorite">
                     <li class=" hotels__item hotels__item--favorite">
                         <div class="wrapper__item--favorite">
                             <span class="hotel__name">Moscow Marriott Grand Hotel</span>
@@ -76,6 +76,23 @@
                             <p class="hotel__price-text">Price<span class="hotel__price hotel__price">23 924 ₽</span></p>
                         </div>
                     </li>
+                    <li class=" hotels__item hotels__item--favorite">
+                        <div class="wrapper__item--favorite">
+                            <span class="hotel__name">Moscow Marriott Grand Hotel</span>
+                            <div class="hotel__favorite"></div>
+                        </div>
+                        <p class="hotel__reservation-date">28 June, 2020 <span class="hotel__reservation-days"> - 1 день</span></p>
+                        <div class="wrapper__item--favorite">
+                            <ul class="rating-stars">
+                                <li class="rating-stars__item"></li>
+                                <li class="rating-stars__item"></li>
+                                <li class="rating-stars__item"></li>
+                                <li class="rating-stars__item"></li>
+                                <li class="rating-stars__item"></li>
+                            </ul>
+                            <p class="hotel__price-text">Price<span class="hotel__price hotel__price">23 924 ₽</span></p>
+                        </div>
+                    </li>
                     <li class="hotels__item hotels__item--favorite">
                         <div class="wrapper__item--favorite">
                             <span class="hotel__name">Moscow Marriott Grand Hotel</span>
@@ -93,12 +110,28 @@
                             <p class="hotel__price-text">Price<span class="hotel__price hotel__price">23 924 ₽</span></p>
                         </div>
                     </li>
+                    <li class="hotels__item hotels__item--favorite">
+                        <div class="wrapper__item--favorite">
+                            <span class="hotel__name">Moscow Marriott Grand Hotel</span>
+                            <div class="hotel__favorite"></div>
+                        </div>
+                        <p class="hotel__reservation-date">28 June, 2020 <span class="hotel__reservation-days"> - 1 день</span></p>
+                        <div class="wrapper__item--favorite">
+                            <ul class="rating-stars">
+                                <li class="rating-stars__item"></li>
+                                <li class="rating-stars__item"></li>
+                                <li class="rating-stars__item"></li>
+                                <li class="rating-stars__item"></li>
+                                <li class="rating-stars__item"></li>
+                            </ul>
+                            <p class="hotel__price-text">Price<span class="hotel__price hotel__price">23 924 ₽</span></p>
+                        </div>
                     </li>
                 </ul>
             </div>
         </div>
         <section class="hotels">
-                <div>
+                <div class="wrapper-hotels-info">
                     <div class="wrapper__hotel-title">
                         <ul class="hotels__bread-crumbs">
                             <li class="hotels__bread-crumb">Отели</li>
@@ -118,7 +151,211 @@
                     <span class="hotels__added-favorites">Добавлено в Избранное: <span class="hotel__count">3</span> отеля</span>
                 </div>
                 <div class="wrapper__hotels-list">
-                    <ul class="hotels__list hotels__list--main">
+                    <ul class="hotels__list">
+                        <li class="hotels__item hotels__item--main-list">
+                            <div class="wrapper__hotel-column-left wrapper__hotel-column-left--main-list">
+                                <span class="hotel__name">Moscow Marriott Grand Hotel</span>
+                                <p class="hotel__reservation-date">28 June, 2020 <span class="hotel__reservation-days"> - 1 день</span></p>
+                                <ul class="rating-stars">
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                </ul>
+                            </div>
+                            <div class="wrapper__hotel-column-right">
+                                <div class="hotel__favorite hotel__favorite--main-list"></div>
+                                <p class="hotel__price-text hotel__price-text--main-list">Price<span class="hotel__price">23 924 ₽</span></p>
+                            </div>
+                        </li>
+                        <li class="hotels__item hotels__item--main-list">
+                            <div class="wrapper__hotel-column-left wrapper__hotel-column-left--main-list">
+                                <span class="hotel__name">Moscow Marriott Grand Hotel</span>
+                                <p class="hotel__reservation-date">28 June, 2020 <span class="hotel__reservation-days"> - 1 день</span></p>
+                                <ul class="rating-stars">
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                </ul>
+                            </div>
+                            <div class="wrapper__hotel-column-right">
+                                <div class="hotel__favorite hotel__favorite--main-list"></div>
+                                <p class="hotel__price-text hotel__price-text--main-list">Price<span class="hotel__price">23 924 ₽</span></p>
+                            </div>
+                        </li>
+                        <li class="hotels__item hotels__item--main-list">
+                            <div class="wrapper__hotel-column-left wrapper__hotel-column-left--main-list">
+                                <span class="hotel__name">Moscow Marriott Grand Hotel</span>
+                                <p class="hotel__reservation-date">28 June, 2020 <span class="hotel__reservation-days"> - 1 день</span></p>
+                                <ul class="rating-stars">
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                </ul>
+                            </div>
+                            <div class="wrapper__hotel-column-right">
+                                <div class="hotel__favorite hotel__favorite--main-list"></div>
+                                <p class="hotel__price-text hotel__price-text--main-list">Price<span class="hotel__price">23 924 ₽</span></p>
+                            </div>
+                        </li>
+                        <li class="hotels__item hotels__item--main-list">
+                            <div class="wrapper__hotel-column-left wrapper__hotel-column-left--main-list">
+                                <span class="hotel__name">Moscow Marriott Grand Hotel</span>
+                                <p class="hotel__reservation-date">28 June, 2020 <span class="hotel__reservation-days"> - 1 день</span></p>
+                                <ul class="rating-stars">
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                </ul>
+                            </div>
+                            <div class="wrapper__hotel-column-right">
+                                <div class="hotel__favorite hotel__favorite--main-list"></div>
+                                <p class="hotel__price-text hotel__price-text--main-list">Price<span class="hotel__price">23 924 ₽</span></p>
+                            </div>
+                        </li>
+                        <li class="hotels__item hotels__item--main-list">
+                            <div class="wrapper__hotel-column-left wrapper__hotel-column-left--main-list">
+                                <span class="hotel__name">Moscow Marriott Grand Hotel</span>
+                                <p class="hotel__reservation-date">28 June, 2020 <span class="hotel__reservation-days"> - 1 день</span></p>
+                                <ul class="rating-stars">
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                </ul>
+                            </div>
+                            <div class="wrapper__hotel-column-right">
+                                <div class="hotel__favorite hotel__favorite--main-list"></div>
+                                <p class="hotel__price-text hotel__price-text--main-list">Price<span class="hotel__price">23 924 ₽</span></p>
+                            </div>
+                        </li>
+                        <li class="hotels__item hotels__item--main-list">
+                            <div class="wrapper__hotel-column-left wrapper__hotel-column-left--main-list">
+                                <span class="hotel__name">Moscow Marriott Grand Hotel</span>
+                                <p class="hotel__reservation-date">28 June, 2020 <span class="hotel__reservation-days"> - 1 день</span></p>
+                                <ul class="rating-stars">
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                </ul>
+                            </div>
+                            <div class="wrapper__hotel-column-right">
+                                <div class="hotel__favorite hotel__favorite--main-list"></div>
+                                <p class="hotel__price-text hotel__price-text--main-list">Price<span class="hotel__price">23 924 ₽</span></p>
+                            </div>
+                        </li>
+                        <li class="hotels__item hotels__item--main-list">
+                            <div class="wrapper__hotel-column-left wrapper__hotel-column-left--main-list">
+                                <span class="hotel__name">Moscow Marriott Grand Hotel</span>
+                                <p class="hotel__reservation-date">28 June, 2020 <span class="hotel__reservation-days"> - 1 день</span></p>
+                                <ul class="rating-stars">
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                </ul>
+                            </div>
+                            <div class="wrapper__hotel-column-right">
+                                <div class="hotel__favorite hotel__favorite--main-list"></div>
+                                <p class="hotel__price-text hotel__price-text--main-list">Price<span class="hotel__price">23 924 ₽</span></p>
+                            </div>
+                        </li>
+                        <li class="hotels__item hotels__item--main-list">
+                            <div class="wrapper__hotel-column-left wrapper__hotel-column-left--main-list">
+                                <span class="hotel__name">Moscow Marriott Grand Hotel</span>
+                                <p class="hotel__reservation-date">28 June, 2020 <span class="hotel__reservation-days"> - 1 день</span></p>
+                                <ul class="rating-stars">
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                </ul>
+                            </div>
+                            <div class="wrapper__hotel-column-right">
+                                <div class="hotel__favorite hotel__favorite--main-list"></div>
+                                <p class="hotel__price-text hotel__price-text--main-list">Price<span class="hotel__price">23 924 ₽</span></p>
+                            </div>
+                        </li>
+                        <li class="hotels__item hotels__item--main-list">
+                            <div class="wrapper__hotel-column-left wrapper__hotel-column-left--main-list">
+                                <span class="hotel__name">Moscow Marriott Grand Hotel</span>
+                                <p class="hotel__reservation-date">28 June, 2020 <span class="hotel__reservation-days"> - 1 день</span></p>
+                                <ul class="rating-stars">
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                </ul>
+                            </div>
+                            <div class="wrapper__hotel-column-right">
+                                <div class="hotel__favorite hotel__favorite--main-list"></div>
+                                <p class="hotel__price-text hotel__price-text--main-list">Price<span class="hotel__price">23 924 ₽</span></p>
+                            </div>
+                        </li>
+                        <li class="hotels__item hotels__item--main-list">
+                            <div class="wrapper__hotel-column-left wrapper__hotel-column-left--main-list">
+                                <span class="hotel__name">Moscow Marriott Grand Hotel</span>
+                                <p class="hotel__reservation-date">28 June, 2020 <span class="hotel__reservation-days"> - 1 день</span></p>
+                                <ul class="rating-stars">
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                </ul>
+                            </div>
+                            <div class="wrapper__hotel-column-right">
+                                <div class="hotel__favorite hotel__favorite--main-list"></div>
+                                <p class="hotel__price-text hotel__price-text--main-list">Price<span class="hotel__price">23 924 ₽</span></p>
+                            </div>
+                        </li>
+                        <li class="hotels__item hotels__item--main-list">
+                            <div class="wrapper__hotel-column-left wrapper__hotel-column-left--main-list">
+                                <span class="hotel__name">Moscow Marriott Grand Hotel</span>
+                                <p class="hotel__reservation-date">28 June, 2020 <span class="hotel__reservation-days"> - 1 день</span></p>
+                                <ul class="rating-stars">
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                </ul>
+                            </div>
+                            <div class="wrapper__hotel-column-right">
+                                <div class="hotel__favorite hotel__favorite--main-list"></div>
+                                <p class="hotel__price-text hotel__price-text--main-list">Price<span class="hotel__price">23 924 ₽</span></p>
+                            </div>
+                        </li>
+                        <li class="hotels__item hotels__item--main-list">
+                            <div class="wrapper__hotel-column-left wrapper__hotel-column-left--main-list">
+                                <span class="hotel__name">Moscow Marriott Grand Hotel</span>
+                                <p class="hotel__reservation-date">28 June, 2020 <span class="hotel__reservation-days"> - 1 день</span></p>
+                                <ul class="rating-stars">
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                    <li class="rating-stars__item"></li>
+                                </ul>
+                            </div>
+                            <div class="wrapper__hotel-column-right">
+                                <div class="hotel__favorite hotel__favorite--main-list"></div>
+                                <p class="hotel__price-text hotel__price-text--main-list">Price<span class="hotel__price">23 924 ₽</span></p>
+                            </div>
+                        </li>
                         <li class="hotels__item hotels__item--main-list">
                             <div class="wrapper__hotel-column-left wrapper__hotel-column-left--main-list">
                                 <span class="hotel__name">Moscow Marriott Grand Hotel</span>
@@ -205,9 +442,6 @@
                             </div>
                         </li>
                     </ul>
-                    <div class="scrollbar">
-                        <div class="scrollbar__handler"></div>
-                    </div>
                 </div>
             </section>
     </main>

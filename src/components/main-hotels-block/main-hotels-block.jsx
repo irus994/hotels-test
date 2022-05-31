@@ -9,7 +9,7 @@ export function MainHotelsBlock(props) {
     const {favoriteList, location, checkin} = props;
     return (
         <section className="hotels">
-            <div>
+            <div className="wrapper-hotels-info">
                 <div className="wrapper__hotel-title">
                     <ul className="hotels__bread-crumbs">
                         <li className="hotels__bread-crumb">Отели</li>
