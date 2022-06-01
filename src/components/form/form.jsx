@@ -1,6 +1,5 @@
 import React, {useRef, useEffect, useState} from 'react';
 import addDays from '../utils.js'
-import {fetchHotelList} from "../../store/api-action.js";
 import {connect} from 'react-redux';
 import {ActionCreator} from "../../store/action";
 
@@ -36,7 +35,6 @@ export function Form(props) {
             checkOut: addDays(dateRef.current.value, +countDaysRef.current.value),
         });
     }
-    console.log(todayDate)
     return (
         <div className="wrapper__form">
             <form onSubmit={handleSubmit} className="form-reservation">
@@ -62,9 +60,7 @@ export function Form(props) {
 
 const mapDispatchToProps = (dispatch) => ({
     onFilter(Data) {
-        dispatch(fetchHotelList(Data));
-        dispatch(ActionCreator.setLocation(Data));
-        dispatch(ActionCreator.setCheckin(Data));
+        dispatch(ActionCreator.requestHotels(Data));
     },
 });
 

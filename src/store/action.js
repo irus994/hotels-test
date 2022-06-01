@@ -2,6 +2,8 @@ export const ActionType = {
     REQUIRED_AUTHORIZATION: 'user/requiredAuthorization',
     LOGOUT: 'user/logout',
     REDIRECT_TO_ROUTE: 'main/redirectToRoute',
+    REQUESTED_HOTELS: 'data/requestHotels',
+    REQUESTED_HOTELS_SUCCESS: 'data/requestHotelsError',
     LOAD_HOTELS: 'data/loadHotels',
     ADD_FAVORITE: 'data/addFavorite',
     DELETE_FAVORITE: 'data/deleteFavorite',
@@ -10,6 +12,13 @@ export const ActionType = {
 };
 
 export const ActionCreator = {
+    requestHotels: (data) => ({
+        type: ActionType.REQUESTED_HOTELS,
+        payload: data,
+    }),
+    requestHotelsError: () => ({
+        type: ActionType.REQUESTED_HOTELS_SUCCESS,
+    }),
     loadHotels: (hotels) => ({
         type: ActionType.LOAD_HOTELS,
         payload: hotels,

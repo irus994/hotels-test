@@ -30,10 +30,15 @@ export const checkAuth = () => (dispatch) => (
             .then(() => dispatch(ActionCreator.requireAuthorization(AuthorizationStatus.NO_AUTH, {})))
 );
 
-export const fetchHotelList = ({location, checkIn, checkOut}) => {
-    return (dispatch) => {
-        return fetch(`https://engine.hotellook.com/api/v2/cache.json?location=${location}&checkIn=${checkIn}&checkOut=${checkOut}&currency=rub`)
-            .then((response) => response.json())
-            .then((response) => dispatch(ActionCreator.loadHotels(response)))
-    };
-};
+// export const fetchHotelList = ({location, checkIn, checkOut}) => {
+//     return (dispatch) => {
+//         return fetch(`https://engine.hotellook.com/api/v2/cache.json?location=${location}&checkIn=${checkIn}&checkOut=${checkOut}&currency=rub`)
+//             .then((response) => response.json())
+//             .then((response) => dispatch(ActionCreator.loadHotels(response)))
+//     };
+// };
+
+// export const fetchHotelList = ({location, checkIn, checkOut}) => {
+//         return fetch(`https://engine.hotellook.com/api/v2/cache.json?location=${location}&checkIn=${checkIn}&checkOut=${checkOut}&currency=rub`)
+//             .then((response) => response.json());
+// };

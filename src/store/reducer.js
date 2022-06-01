@@ -47,7 +47,7 @@ export const reducer = (state = initialState, action) => {
                 ...state,
                 hotels: {
                     ...state.hotels,
-                    location: action.payload.location,
+                    location: action.payload,
                 }
             }
         case ActionType.SET_CHECKIN :
@@ -55,7 +55,7 @@ export const reducer = (state = initialState, action) => {
                 ...state,
                 hotels: {
                     ...state.hotels,
-                    checkin: action.payload.checkIn,
+                    checkin: action.payload,
                 }
             }
         case ActionType.REQUIRED_AUTHORIZATION:

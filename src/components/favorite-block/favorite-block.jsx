@@ -44,7 +44,7 @@ export function FavoriteBlock(props) {
                             hotelName={hotel.hotelName}
                             price={hotel.priceAvg}
                             hotelId={hotel.hotelId}
-                            starCount={hotel.stars}git 
+                            starCount={hotel.stars}
                         />
                     ))
                 }

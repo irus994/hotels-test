@@ -7,10 +7,19 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import {reducer} from "./store/reducer.js";
 import thunk from 'redux-thunk';
+import createSagaMiddleware from 'redux-saga'
 import {checkAuth} from "./store/api-action";
+import {rootSaga} from "./store/sagas";
 
+const sagaMiddleware = createSagaMiddleware()
 
-const store = createStore(reducer, applyMiddleware(thunk));
+const middleWares = [sagaMiddleware, thunk]
+const store = createStore(
+    reducer,
+    applyMiddleware(...middleWares)
+)
+
+sagaMiddleware.run(rootSaga);
 
 store.dispatch(checkAuth())
 
