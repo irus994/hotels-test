@@ -7,7 +7,7 @@ export function MainHotelList(props) {
 
     return (
         <div className="wrapper__hotels-list">
-            <ul className="hotels__list" id="style-3">
+            <ul className="hotels__list">
             {
                 hotels.map((hotel) => (
                     <HotelItem

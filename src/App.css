@@ -368,18 +368,18 @@ body {
   overflow-y: scroll;
 }
 
-#style-3::-webkit-scrollbar-track
+.hotels__list::-webkit-scrollbar-track
 {
   width: 2px;
   background-color: #E7E7E7;
 }
 
-#style-3::-webkit-scrollbar
+.hotels__list::-webkit-scrollbar
 {
   width: 2px;
 }
 
-#style-3::-webkit-scrollbar-thumb
+.hotels__list::-webkit-scrollbar-thumb
 {
   background-color: #41522E;
 }
