@@ -1,7 +1,7 @@
 import React from 'react';
 import RatingStar from "../../components/star/star.jsx";
 import {connect} from "react-redux";
-import {ActionCreator} from '../../store/action.js'
+import {ActionCreator} from '../../store/action.js';
 
 function HotelFavoriteItem(props) {
     const {hotelName, price, hotelId, favoriteList, addToFavorite, deleteFromFavorite, starCount} = props;

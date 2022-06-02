@@ -361,12 +361,29 @@ body {
 
 .hotels__list {
   list-style: none;
-  padding: 0;
+  padding: 0 22px 0 0;
   margin-top: 20px;
   height: 530px;
   width: 580px;
-  overflow: scroll;
+  overflow-y: scroll;
 }
+
+#style-3::-webkit-scrollbar-track
+{
+  width: 2px;
+  background-color: #E7E7E7;
+}
+
+#style-3::-webkit-scrollbar
+{
+  width: 2px;
+}
+
+#style-3::-webkit-scrollbar-thumb
+{
+  background-color: #41522E;
+}
+
 
 .hotels__list--favorite {
   width: 100%;

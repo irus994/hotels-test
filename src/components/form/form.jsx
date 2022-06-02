@@ -24,7 +24,7 @@ export function Form(props) {
             checkOut: addDays(dateRef.current.value, +countDaysRef.current.value),
             }
         )
-    }, [onFilter])
+    }, [onFilter]);
 
     const handleSubmit = (evt) => {
         evt.preventDefault();
